@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6089566206F317A0055B16D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6089565206F317A0055B16D /* AppDelegate.swift */; };
+		A608956B206F317A0055B16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6089569206F317A0055B16D /* Main.storyboard */; };
+		A608956D206F317A0055B16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A608956C206F317A0055B16D /* Assets.xcassets */; };
+		A6089570206F317A0055B16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A608956E206F317A0055B16D /* LaunchScreen.storyboard */; };
+		A608957B206F317B0055B16D /* CashBackCheatSheetProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608957A206F317B0055B16D /* CashBackCheatSheetProTests.swift */; };
+		A6089586206F317B0055B16D /* CashBackCheatSheetProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6089585206F317B0055B16D /* CashBackCheatSheetProUITests.swift */; };
+		A6089594206F31FE0055B16D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6089593206F31FE0055B16D /* HomeVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6089577206F317B0055B16D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A608955A206F317A0055B16D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6089561206F317A0055B16D;
+			remoteInfo = CashBackCheatSheetPro;
+		};
+		A6089582206F317B0055B16D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A608955A206F317A0055B16D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6089561206F317A0055B16D;
+			remoteInfo = CashBackCheatSheetPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6089562206F317A0055B16D /* CashBackCheatSheetPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashBackCheatSheetPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6089565206F317A0055B16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A608956A206F317A0055B16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A608956C206F317A0055B16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A608956F206F317A0055B16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6089571206F317A0055B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6089576206F317B0055B16D /* CashBackCheatSheetProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashBackCheatSheetProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A608957A206F317B0055B16D /* CashBackCheatSheetProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackCheatSheetProTests.swift; sourceTree = "<group>"; };
+		A608957C206F317B0055B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6089581206F317B0055B16D /* CashBackCheatSheetProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashBackCheatSheetProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6089585206F317B0055B16D /* CashBackCheatSheetProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackCheatSheetProUITests.swift; sourceTree = "<group>"; };
+		A6089587206F317B0055B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6089593206F31FE0055B16D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A608955F206F317A0055B16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6089573206F317B0055B16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A608957E206F317B0055B16D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6089559206F317A0055B16D = {
+			isa = PBXGroup;
+			children = (
+				A6089564206F317A0055B16D /* CashBackCheatSheetPro */,
+				A6089579206F317B0055B16D /* CashBackCheatSheetProTests */,
+				A6089584206F317B0055B16D /* CashBackCheatSheetProUITests */,
+				A6089563206F317A0055B16D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6089563206F317A0055B16D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6089562206F317A0055B16D /* CashBackCheatSheetPro.app */,
+				A6089576206F317B0055B16D /* CashBackCheatSheetProTests.xctest */,
+				A6089581206F317B0055B16D /* CashBackCheatSheetProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6089564206F317A0055B16D /* CashBackCheatSheetPro */ = {
+			isa = PBXGroup;
+			children = (
+				A6089565206F317A0055B16D /* AppDelegate.swift */,
+				A6089569206F317A0055B16D /* Main.storyboard */,
+				A6089593206F31FE0055B16D /* HomeVC.swift */,
+				A608956C206F317A0055B16D /* Assets.xcassets */,
+				A608956E206F317A0055B16D /* LaunchScreen.storyboard */,
+				A6089571206F317A0055B16D /* Info.plist */,
+			);
+			path = CashBackCheatSheetPro;
+			sourceTree = "<group>";
+		};
+		A6089579206F317B0055B16D /* CashBackCheatSheetProTests */ = {
+			isa = PBXGroup;
+			children = (
+				A608957A206F317B0055B16D /* CashBackCheatSheetProTests.swift */,
+				A608957C206F317B0055B16D /* Info.plist */,
+			);
+			path = CashBackCheatSheetProTests;
+			sourceTree = "<group>";
+		};
+		A6089584206F317B0055B16D /* CashBackCheatSheetProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6089585206F317B0055B16D /* CashBackCheatSheetProUITests.swift */,
+				A6089587206F317B0055B16D /* Info.plist */,
+			);
+			path = CashBackCheatSheetProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6089561206F317A0055B16D /* CashBackCheatSheetPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A608958A206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetPro" */;
+			buildPhases = (
+				A608955E206F317A0055B16D /* Sources */,
+				A608955F206F317A0055B16D /* Frameworks */,
+				A6089560206F317A0055B16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CashBackCheatSheetPro;
+			productName = CashBackCheatSheetPro;
+			productReference = A6089562206F317A0055B16D /* CashBackCheatSheetPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6089575206F317B0055B16D /* CashBackCheatSheetProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A608958D206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetProTests" */;
+			buildPhases = (
+				A6089572206F317B0055B16D /* Sources */,
+				A6089573206F317B0055B16D /* Frameworks */,
+				A6089574206F317B0055B16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6089578206F317B0055B16D /* PBXTargetDependency */,
+			);
+			name = CashBackCheatSheetProTests;
+			productName = CashBackCheatSheetProTests;
+			productReference = A6089576206F317B0055B16D /* CashBackCheatSheetProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6089580206F317B0055B16D /* CashBackCheatSheetProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6089590206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetProUITests" */;
+			buildPhases = (
+				A608957D206F317B0055B16D /* Sources */,
+				A608957E206F317B0055B16D /* Frameworks */,
+				A608957F206F317B0055B16D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6089583206F317B0055B16D /* PBXTargetDependency */,
+			);
+			name = CashBackCheatSheetProUITests;
+			productName = CashBackCheatSheetProUITests;
+			productReference = A6089581206F317B0055B16D /* CashBackCheatSheetProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A608955A206F317A0055B16D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Ruslan Suvorov";
+				TargetAttributes = {
+					A6089561206F317A0055B16D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6089575206F317B0055B16D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6089561206F317A0055B16D;
+					};
+					A6089580206F317B0055B16D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6089561206F317A0055B16D;
+					};
+				};
+			};
+			buildConfigurationList = A608955D206F317A0055B16D /* Build configuration list for PBXProject "CashBackCheatSheetPro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6089559206F317A0055B16D;
+			productRefGroup = A6089563206F317A0055B16D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6089561206F317A0055B16D /* CashBackCheatSheetPro */,
+				A6089575206F317B0055B16D /* CashBackCheatSheetProTests */,
+				A6089580206F317B0055B16D /* CashBackCheatSheetProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6089560206F317A0055B16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6089570206F317A0055B16D /* LaunchScreen.storyboard in Resources */,
+				A608956D206F317A0055B16D /* Assets.xcassets in Resources */,
+				A608956B206F317A0055B16D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6089574206F317B0055B16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A608957F206F317B0055B16D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A608955E206F317A0055B16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6089566206F317A0055B16D /* AppDelegate.swift in Sources */,
+				A6089594206F31FE0055B16D /* HomeVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6089572206F317B0055B16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A608957B206F317B0055B16D /* CashBackCheatSheetProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A608957D206F317B0055B16D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6089586206F317B0055B16D /* CashBackCheatSheetProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6089578206F317B0055B16D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6089561206F317A0055B16D /* CashBackCheatSheetPro */;
+			targetProxy = A6089577206F317B0055B16D /* PBXContainerItemProxy */;
+		};
+		A6089583206F317B0055B16D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6089561206F317A0055B16D /* CashBackCheatSheetPro */;
+			targetProxy = A6089582206F317B0055B16D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6089569206F317A0055B16D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A608956A206F317A0055B16D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A608956E206F317A0055B16D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A608956F206F317A0055B16D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6089588206F317B0055B16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6089589206F317B0055B16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A608958B206F317B0055B16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A608958C206F317B0055B16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A608958E206F317B0055B16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashBackCheatSheetPro.app/CashBackCheatSheetPro";
+			};
+			name = Debug;
+		};
+		A608958F206F317B0055B16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashBackCheatSheetPro.app/CashBackCheatSheetPro";
+			};
+			name = Release;
+		};
+		A6089591206F317B0055B16D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashBackCheatSheetPro;
+			};
+			name = Debug;
+		};
+		A6089592206F317B0055B16D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LCWFZ2JA9;
+				INFOPLIST_FILE = CashBackCheatSheetProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.CashBackCheatSheetProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashBackCheatSheetPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A608955D206F317A0055B16D /* Build configuration list for PBXProject "CashBackCheatSheetPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6089588206F317B0055B16D /* Debug */,
+				A6089589206F317B0055B16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A608958A206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A608958B206F317B0055B16D /* Debug */,
+				A608958C206F317B0055B16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A608958D206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A608958E206F317B0055B16D /* Debug */,
+				A608958F206F317B0055B16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6089590206F317B0055B16D /* Build configuration list for PBXNativeTarget "CashBackCheatSheetProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6089591206F317B0055B16D /* Debug */,
+				A6089592206F317B0055B16D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A608955A206F317A0055B16D /* Project object */;
+}
