@@ -16,8 +16,12 @@ class DetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,9 +35,11 @@ extension DetailsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CardDetailsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath) as! DetailsCell
         
-        cell.textLabel?.text = "\(indexPath.row)"
+
+        cell.label.text = "\(indexPath.row) asdf asdf asdf asd asdf sdf asd adsf adf adsf adsf ad adsf adf asd fasd faasdf asdf safd."
+        
         
         return cell
     }

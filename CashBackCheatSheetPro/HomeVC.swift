@@ -45,9 +45,10 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath) as! HomeTableCell
         
-        cell.textLabel?.text = "\(indexPath.row)"
+//        cell.textLabel?.text = "\(indexPath.row)"
+        cell.label.text = "\(indexPath.row)"
         
         return cell
     }
