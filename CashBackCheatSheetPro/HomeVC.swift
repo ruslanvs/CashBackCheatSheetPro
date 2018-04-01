@@ -23,13 +23,23 @@ class HomeVC: UIViewController {
         pickerView.dataSource = self
         pickerView.delegate = self
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let destination = segue.destination
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
 extension HomeVC: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true) //>> how to make it disappear with animation when user gets back to this screen?
+        performSegue(withIdentifier: "CardDetails", sender: indexPath)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -46,7 +56,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
 extension HomeVC: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {

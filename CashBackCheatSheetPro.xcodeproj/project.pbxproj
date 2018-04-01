@@ -14,6 +14,7 @@
 		A608957B206F317B0055B16D /* CashBackCheatSheetProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608957A206F317B0055B16D /* CashBackCheatSheetProTests.swift */; };
 		A6089586206F317B0055B16D /* CashBackCheatSheetProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6089585206F317B0055B16D /* CashBackCheatSheetProUITests.swift */; };
 		A6089594206F31FE0055B16D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6089593206F31FE0055B16D /* HomeVC.swift */; };
+		A691CB8F2070677F00FE22BA /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691CB8E2070677F00FE22BA /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A6089585206F317B0055B16D /* CashBackCheatSheetProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashBackCheatSheetProUITests.swift; sourceTree = "<group>"; };
 		A6089587206F317B0055B16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6089593206F31FE0055B16D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A691CB8E2070677F00FE22BA /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A6089565206F317A0055B16D /* AppDelegate.swift */,
 				A6089569206F317A0055B16D /* Main.storyboard */,
 				A6089593206F31FE0055B16D /* HomeVC.swift */,
+				A691CB8E2070677F00FE22BA /* DetailsVC.swift */,
 				A608956C206F317A0055B16D /* Assets.xcassets */,
 				A608956E206F317A0055B16D /* LaunchScreen.storyboard */,
 				A6089571206F317A0055B16D /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6089566206F317A0055B16D /* AppDelegate.swift in Sources */,
+				A691CB8F2070677F00FE22BA /* DetailsVC.swift in Sources */,
 				A6089594206F31FE0055B16D /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
