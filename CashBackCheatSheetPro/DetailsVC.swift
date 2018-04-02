@@ -10,8 +10,9 @@ import UIKit
 
 class DetailsVC: UIViewController {
     
-//    let card: Card
+    weak var card: Card?
 
+    @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,7 +22,8 @@ class DetailsVC: UIViewController {
         tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-
+        
+        img.image = card!.img
     }
 
     override func didReceiveMemoryWarning() {

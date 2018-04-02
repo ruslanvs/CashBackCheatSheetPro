@@ -12,4 +12,5 @@ class HomeTableCell: UITableViewCell {
     
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
 }
