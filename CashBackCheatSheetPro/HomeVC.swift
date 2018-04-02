@@ -168,7 +168,7 @@ class HomeVC: UIViewController {
         allCardsArr.append(capital_one_savor_dining_rewards)
         
         
-        selectCardsArr = allCardsArr
+//        selectCardsArr = allCardsArr
 
     }
     
@@ -205,6 +205,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         cell.img.image = selectCardsArr[indexPath.row].img
         cell.label.text = selectCardsArr[indexPath.row].title
         cell.detailsLabel.text = "\(selectCardsArr[indexPath.row].select_cash_back_rate)% \(selectCardsArr[indexPath.row].select_cash_back_notes)"
+        
         return cell
     }
 }
@@ -224,7 +225,7 @@ extension HomeVC: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        selectedCat = allCategoriesArr[row]
+
         selectCardsArr = []
         
         for card in allCardsArr {
@@ -237,7 +238,41 @@ extension HomeVC: UIPickerViewDataSource, UIPickerViewDelegate {
             }
         }
         
+        for card in allCardsArr {
+            var isSelect = false
+            for selectCard in selectCardsArr {
+                if card.title == selectCard.title { //>> Eli: can I not just compare two variables of type Card?
+                    isSelect = true
+                    break
+                }
+            }
+            if isSelect == false {
+                for cb in card.cash_backs {
+                    if cb.category.title == allCategoriesArr[0].title {
+                        card.select_cash_back_rate = cb.rate
+                        card.select_cash_back_notes = cb.notes
+                        selectCardsArr.append(card)
+                        break
+                    }
+                }
+            }
+            isSelect = false
+        }
+        
+        var didSort = true
+        while didSort == true {
+            didSort = false
+            for i in 0..<(selectCardsArr.count - 1)  {
+                if selectCardsArr[i].select_cash_back_rate < selectCardsArr[i + 1].select_cash_back_rate {
+                    let temp = selectCardsArr[i]
+                    selectCardsArr[i] = selectCardsArr[i + 1]
+                    selectCardsArr[i + 1] = temp
+                    didSort = true
+                }
+            }
+        }
         tableView.reloadData()
+        tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: UITableViewScrollPosition.top, animated: true)
     }
 }
 
