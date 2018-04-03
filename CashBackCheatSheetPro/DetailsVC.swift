@@ -11,6 +11,8 @@ import UIKit
 class DetailsVC: UIViewController {
     
     weak var card: Card?
+    
+    var tableData = [String]()
 
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -23,7 +25,15 @@ class DetailsVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
         
-        img.image = card!.img
+        if let c = card {
+            self.title = c.title
+            img.image = c.img
+//            tableData.append( c.title )
+            tableData.append( c.annualFee )
+            tableData.append( c.cashBackTerms )
+            tableData.append( c.linkToApply )
+            tableData.append( c.otherTerms )
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,15 +43,14 @@ class DetailsVC: UIViewController {
 
 extension DetailsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return tableData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsCell", for: indexPath) as! DetailsCell
         
-
-        cell.label.text = "\(indexPath.row) asdf asdf asdf asd asdf sdf asd adsf adf adsf adsf ad adsf adf asd fasd faasdf asdf safd."
-        
+//        cell.label.text = "\(indexPath.row) asdf asdf asdf asd asdf sdf asd adsf adf adsf adsf ad adsf adf asd fasd faasdf asdf safd."
+        cell.label.text = tableData[indexPath.row]
         
         return cell
     }
