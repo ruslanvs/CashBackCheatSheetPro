@@ -25,14 +25,19 @@ class DetailsVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
         
-        if let c = card {
-            self.title = c.title
-            img.image = c.img
+        if let card = card {
+            self.title = card.title
+            img.image = card.img
+            tableData.append( card.issuer )
 //            tableData.append( c.title )
-            tableData.append( c.annualFee )
-            tableData.append( c.cashBackTerms )
-            tableData.append( c.linkToApply )
-            tableData.append( c.otherTerms )
+            for cashBack in card.cash_backs {
+                tableData.append("\(cashBack.category.title), \(cashBack.rate)%")
+                tableData.append("\(cashBack.notes)")
+            }
+            tableData.append( card.annualFee )
+//            tableData.append( card.cashBackTerms )
+//            tableData.append( card.linkToApply )
+//            tableData.append( card.otherTerms )
         }
     }
 
