@@ -20,6 +20,8 @@
 		A691CB9120706B9600FE22BA /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691CB9020706B9600FE22BA /* HomeTableCell.swift */; };
 		A6BA0432207990F200508C4C /* CardDetailsAnnualFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA0431207990F200508C4C /* CardDetailsAnnualFeeCell.swift */; };
 		A6BA04342079930200508C4C /* CardDetailsCashBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA04332079930200508C4C /* CardDetailsCashBackCell.swift */; };
+		A6BA04362079AEFB00508C4C /* TopCardsImageTitleIssuerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA04352079AEFB00508C4C /* TopCardsImageTitleIssuerCell.swift */; };
+		A6BA04382079AF8500508C4C /* TopCardsCashBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA04372079AF8500508C4C /* TopCardsCashBackCell.swift */; };
 		A6EFD7232074460B004EF4B6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFD7222074460B004EF4B6 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		A691CB9020706B9600FE22BA /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 		A6BA0431207990F200508C4C /* CardDetailsAnnualFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsAnnualFeeCell.swift; sourceTree = "<group>"; };
 		A6BA04332079930200508C4C /* CardDetailsCashBackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsCashBackCell.swift; sourceTree = "<group>"; };
+		A6BA04352079AEFB00508C4C /* TopCardsImageTitleIssuerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardsImageTitleIssuerCell.swift; sourceTree = "<group>"; };
+		A6BA04372079AF8500508C4C /* TopCardsCashBackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardsCashBackCell.swift; sourceTree = "<group>"; };
 		A6EFD7222074460B004EF4B6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 				A6EFD7222074460B004EF4B6 /* Models.swift */,
 				A6089565206F317A0055B16D /* AppDelegate.swift */,
 				A6089569206F317A0055B16D /* Main.storyboard */,
+				A6BA04372079AF8500508C4C /* TopCardsCashBackCell.swift */,
+				A6BA04352079AEFB00508C4C /* TopCardsImageTitleIssuerCell.swift */,
 				A6BA04332079930200508C4C /* CardDetailsCashBackCell.swift */,
 				A6BA0431207990F200508C4C /* CardDetailsAnnualFeeCell.swift */,
 				A663DB6420728F5300D9CABA /* TopCardsVC.swift */,
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BA04382079AF8500508C4C /* TopCardsCashBackCell.swift in Sources */,
+				A6BA04362079AEFB00508C4C /* TopCardsImageTitleIssuerCell.swift in Sources */,
 				A6BA0432207990F200508C4C /* CardDetailsAnnualFeeCell.swift in Sources */,
 				A6BA04342079930200508C4C /* CardDetailsCashBackCell.swift in Sources */,
 				A6089566206F317A0055B16D /* AppDelegate.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 enum TopCardsViewModelItemType {
-    case pictureTitleIssuer
+    case imageTitleIssuer
     case cashBack
 }
 
@@ -18,6 +18,37 @@ protocol TopCardsViewModelItem {
     var sectionTitle: String { get }
     var rowCount: Int { get }
 }
+
+class TopCardsViewImageTitleIssuerItem: TopCardsViewModelItem {
+    let type: TopCardsViewModelItemType = .imageTitleIssuer
+    let sectionTitle: String = "Main Info"
+    let rowCount: Int = 1
+    
+    var img: UIImage
+    var title: String
+    var issuer: String
+    
+    init( img: UIImage, title: String, issuer: String ){
+        self.img = img
+        self.title = title
+        self.issuer = issuer
+    }
+}
+
+class TopCardsViewCashBackItem: TopCardsViewModelItem {
+    let type: TopCardsViewModelItemType = .cashBack
+    let sectionTitle: String = "Cash Back"
+    var rowCount: Int {
+        return cashBacks.count
+    }
+    
+    var cashBacks: [CashBack]
+    
+    init( cashBacks: [CashBack] ) {
+        self.cashBacks = cashBacks
+    }
+}
+    
 
 class TopCardsViewModel {
     var items = [TopCardsViewModelItem]()
@@ -30,8 +61,8 @@ class TopCardsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+//        tableView.dataSource = self
+//        tableView.delegate = self
         
         for card in Data.shared.topCards {
             tableData.append("\(card.issuer)")
@@ -49,16 +80,16 @@ class TopCardsVC: UIViewController {
     }
 }
 
-extension TopCardsVC: UITableViewDataSource, UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TopCardCell", for: indexPath)
-        
-        cell.textLabel?.text = tableData[indexPath.row]
-        return cell
-    }
-}
+//extension TopCardsVC: UITableViewDataSource, UITableViewDelegate {
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return tableData.count
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TopCardCell", for: indexPath)
+//
+//        cell.textLabel?.text = tableData[indexPath.row]
+//        return cell
+//    }
+//}
