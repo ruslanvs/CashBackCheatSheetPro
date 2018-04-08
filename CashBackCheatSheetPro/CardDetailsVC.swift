@@ -86,10 +86,10 @@ class CardDetailsVC: UIViewController {
             img.image = card.img
         }
 
-        compileData()
+        compileViewData()
     }
     
-    func compileData(){
+    func compileViewData(){
         
         if let title = card?.title, let issuer = card?.issuer {
             let titleAndIssuerItem = TitleAndIssuerItem(title: title, issuer: issuer)
@@ -119,12 +119,12 @@ extension CardDetailsVC: UITableViewDelegate, UITableViewDataSource {
         return items.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items[section].rowCount
-    }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return items[section].sectionTitle
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items[section].rowCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

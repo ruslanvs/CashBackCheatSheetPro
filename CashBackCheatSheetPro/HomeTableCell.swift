@@ -11,8 +11,8 @@ import UIKit
 class HomeTableCell: UITableViewCell {
     
     @IBOutlet weak var img: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var detailsLabel: UILabel!
-    @IBOutlet weak var rightBigLabel: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var details: UILabel!
     
 }

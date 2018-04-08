@@ -54,9 +54,9 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableCell", for: indexPath) as! HomeTableCell
         
         cell.img.image = Data.shared.selectCards[indexPath.row].img
-        cell.label.text = Data.shared.selectCards[indexPath.row].title
-        cell.detailsLabel.text = Data.shared.selectCards[indexPath.row].issuer
-        cell.rightBigLabel.text = "\(Data.shared.selectCards[indexPath.row].select_cash_back_rate)%"
+        cell.title.text = Data.shared.selectCards[indexPath.row].title
+        cell.subtitle.text = Data.shared.selectCards[indexPath.row].issuer
+        cell.details.text = "\(Data.shared.selectCards[indexPath.row].select_cash_back_rate)%"
 
         return cell
     }
