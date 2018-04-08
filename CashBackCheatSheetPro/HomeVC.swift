@@ -26,7 +26,7 @@ class HomeVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! DetailsVC
+        let destination = segue.destination as! CardDetailsVC
         
         if sender as? IndexPath != nil {
             let indexPath = sender as! IndexPath

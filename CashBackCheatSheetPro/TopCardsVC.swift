@@ -8,6 +8,21 @@
 
 import UIKit
 
+enum TopCardsViewModelItemType {
+    case pictureTitleIssuer
+    case cashBack
+}
+
+protocol TopCardsViewModelItem {
+    var type: TopCardsViewModelItemType { get }
+    var sectionTitle: String { get }
+    var rowCount: Int { get }
+}
+
+class TopCardsViewModel {
+    var items = [TopCardsViewModelItem]()
+}
+
 class TopCardsVC: UIViewController {
     
     var tableData = [String]()
