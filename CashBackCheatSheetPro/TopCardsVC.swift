@@ -17,21 +17,25 @@ protocol TopCardsViewModelItem {
     var type: TopCardsViewModelItemType { get }
     var sectionTitle: String { get }
     var rowCount: Int { get }
+    var card: Card { get }
 }
 
 class TopCardsViewImageTitleIssuerItem: TopCardsViewModelItem {
     let type: TopCardsViewModelItemType = .imageTitleIssuer
     let sectionTitle: String = " "
     let rowCount: Int = 1
+    var card: Card
     
     var img: UIImage
     var title: String
     var issuer: String
     
-    init( img: UIImage, title: String, issuer: String ){
+    
+    init( img: UIImage, title: String, issuer: String, card: Card ){
         self.img = img
         self.title = title
         self.issuer = issuer
+        self.card = card
     }
 }
 
@@ -41,11 +45,13 @@ class TopCardsViewCashBackItem: TopCardsViewModelItem {
     var rowCount: Int {
         return cashBacks.count
     }
+    var card: Card
     
     var cashBacks: [CashBack]
     
-    init( cashBacks: [CashBack] ) {
+    init( cashBacks: [CashBack], card: Card ) {
         self.cashBacks = cashBacks
+        self.card = card
     }
 }
     
@@ -62,32 +68,27 @@ class TopCardsVC: UIViewController {
         tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-
-        
-//        for card in Data.shared.topCards {
-//            tableData.append("\(card.issuer)")
-//            tableData.append("\(card.title) is top in:")
-//
-//            for cashBack in card.topInCategory {
-//                tableData.append("\(cashBack.rate)% - \(cashBack.category.title)")
-//            }
-//            tableData.append("")
-//        }
         
         compileViewData()
     }
     
     func compileViewData(){
         for card in Data.shared.topCards {
-//            if let img = card.img, let title = card.title, let issuer = card.issuer {
-//                let imageTitleIssuerItem = TopCardsViewImageTitleIssuerItem(img: img, title: title, issuer: issuer)
-//                tableData.append( imageTitleIssuerItem )
-//            }
-            let imageTitleIssuerItem = TopCardsViewImageTitleIssuerItem(img: card.img, title: card.title, issuer: card.issuer)
+
+            let imageTitleIssuerItem = TopCardsViewImageTitleIssuerItem(img: card.img, title: card.title, issuer: card.issuer, card: card )
             tableData.append( imageTitleIssuerItem )
             
-            let cashBacksItem = TopCardsViewCashBackItem( cashBacks: card.topInCategory )
+            let cashBacksItem = TopCardsViewCashBackItem( cashBacks: card.topInCategory, card: card )
             tableData.append( cashBacksItem )
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! CardDetailsVC
+        
+        if sender as? IndexPath != nil {
+            let indexPath = sender as! IndexPath
+            destination.card = tableData[indexPath.section].card
         }
     }
     
@@ -97,6 +98,11 @@ class TopCardsVC: UIViewController {
 }
 
 extension TopCardsVC: UITableViewDataSource, UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow( at: indexPath, animated: true )
+        performSegue( withIdentifier: "CardDetails2", sender: indexPath )
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return tableData.count
