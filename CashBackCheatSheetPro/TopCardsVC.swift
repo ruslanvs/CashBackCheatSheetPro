@@ -41,7 +41,7 @@ class TopCardsViewImageTitleIssuerItem: TopCardsViewModelItem {
 
 class TopCardsViewCashBackItem: TopCardsViewModelItem {
     let type: TopCardsViewModelItemType = .cashBack
-    let sectionTitle: String = "Top Cash Back"
+    let sectionTitle: String = ""
     var rowCount: Int {
         return cashBacks.count
     }
